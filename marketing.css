@@ -35,6 +35,7 @@
 .price .punch { margin-bottom: 14px; }
 .price .rarity { justify-content: center; }
 .price p { color: var(--ink-2); margin: 0 auto; max-width: 34em; }
+.price p.fine { color: var(--ink-3); margin-top: 12px; }
 
 .steps { counter-reset: s; display: grid; gap: 16px; }
 @media (min-width: 760px) { .steps { grid-template-columns: repeat(3, 1fr); } }

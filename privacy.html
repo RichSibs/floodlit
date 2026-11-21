@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:title" content="Privacy policy – Floodlit">
 <meta property="og:description" content="How Floodlit handles your information: no tracking, no ads, nothing sold.">
-<meta property="og:image" content="icon.png">
+<meta property="og:image" content="https://richsibs.github.io/floodlit/icon.png">
 <link rel="preload" href="fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -26,7 +26,7 @@
 <main>
 <article class="doc"><div class="wrap">
 <h1>Privacy policy</h1>
-<p class="meta">Last updated 17 November 2026</p>
+<p class="meta">Last updated 21 November 2026</p>
 
 <div class="callout"><p><strong>In short:</strong> Floodlit doesn't keep, sell or share information about you. Your Sorare sign-in stays on your own iPhone and Apple Watch, your lineups come straight from Sorare to your devices, and there are no ads, analytics or trackers.</p></div>
 
@@ -35,10 +35,12 @@
 
 <h2>What Floodlit handles, and where it goes</h2>
 <ul>
-  <li><strong>Your Sorare sign-in.</strong> When you choose <em>Log in with Sorare</em>, you sign in on Sorare's own web page and approve Floodlit there. Floodlit never sees your Sorare password. Sorare then gives Floodlit access tokens that let it read your lineups. These tokens are stored only in the secure Keychain on your iPhone and Apple Watch, and are sent only to Sorare and to Floodlit's sign-in service (below).</li>
+  <li><strong>Your Sorare sign-in.</strong> When you choose <em>Log in with Sorare</em>, you sign in on Sorare's own web page, in a private sign-in sheet, and approve Floodlit there. Floodlit never sees your Sorare password. Sorare then gives Floodlit access tokens that let it read your lineups. These tokens are kept only on your iPhone and Apple Watch, in the secure Keychain and in Apple's encrypted link that carries your sign-in to your watch. They are sent only to Sorare and to Floodlit's sign-in service (below).</li>
   <li><strong>Your lineups, scores and rewards.</strong> Your Apple Watch fetches these directly from Sorare's servers and shows them. Card pictures are downloaded from Sorare's image servers and kept in a cache on the watch for up to 14 days so they load faster. None of this is sent to us.</li>
-  <li><strong>Between your iPhone and Apple Watch.</strong> Your iPhone passes your sign-in to your watch using Apple's encrypted Watch Connectivity.</li>
-  <li><strong>Small settings on your watch.</strong> The watch remembers when it last received a sign-in from your phone, and a scrambled fingerprint (not the token itself) of any sign-in Sorare has turned down, so it doesn't retry it. These never leave the watch, and the fingerprint is deleted when you sign out.</li>
+  <li><strong>Floodlit Pro.</strong> Apple sells Floodlit Pro and handles the payment. To know whether to unlock it, the apps ask Apple, on your device, whether your Apple Account has bought Floodlit Pro or first downloaded Floodlit when it was a paid app. Only the yes-or-no answer is kept, on your iPhone and Apple Watch. We never receive your payment details or Apple Account details.</li>
+  <li><strong>Watch face complications (Floodlit Pro).</strong> So your complications have something to show, the watch keeps a short summary of your game week, such as how many lineups are earning, the rewards they're on track for and the lineup deadline. It's kept in storage that only Floodlit and its complications can read, it stays on your watch, and it's deleted when you sign out. When complications refresh in the background, the watch fetches from Sorare directly, as above.</li>
+  <li><strong>Between your iPhone and Apple Watch.</strong> Your iPhone passes your sign-in and whether you have Floodlit Pro to your watch, using Apple's encrypted Watch Connectivity. If Sorare ends your sign-in, your watch tells your iPhone, so it can sign you out and ask you to log in again.</li>
+  <li><strong>Small settings on your watch.</strong> The watch remembers when it last received a sign-in from your iPhone, whether Floodlit Pro is unlocked, which lineup is free this game week, and a scrambled fingerprint (not the token itself) of any sign-in Sorare has turned down, so it doesn't retry it. These stay on your devices, and the fingerprint is deleted when you sign out.</li>
 </ul>
 
 <h2>Floodlit's sign-in service</h2>
@@ -52,14 +54,14 @@
 <p>If you contact us, we use your email address and what you send only to reply and help you. We keep support emails for up to 2 years, then delete them, unless we need them longer to deal with a complaint or a legal claim.</p>
 
 <h2>Apple</h2>
-<p>Purchases and downloads are handled by Apple under Apple's terms and privacy policy. We don't receive your payment details or your Apple ID. If you have chosen in your iPhone's settings to share analytics with app developers, Apple may give us anonymous crash reports and usage statistics (such as how many people use the app). These don't identify you, and we use them only to fix problems.</p>
+<p>Purchases and downloads, including Floodlit Pro, are handled by Apple under Apple's terms and privacy policy. We don't receive your payment details or your Apple Account details. If you have chosen in your iPhone's settings to share analytics with app developers, Apple may give us anonymous crash reports and usage statistics (such as how many people use the app). These don't identify you, and we use them only to fix problems.</p>
 
 <h2>Sorare</h2>
 <p>Your use of Sorare is covered by <a href="https://sorare.com/" rel="noopener">Sorare's</a> own terms and privacy policy. Floodlit only reads your lineups, scores and rewards; it can't buy, sell or trade cards or change your lineups.</p>
 
 <h2>Our legal reasons for using this information</h2>
 <ul>
-  <li><strong>To provide the app you've bought</strong> (contract): signing you in through the sign-in service and showing your lineups.</li>
+  <li><strong>To provide the app you use, and Floodlit Pro if you buy it</strong> (contract): signing you in through the sign-in service, showing your lineups and unlocking Pro.</li>
   <li><strong>Our legitimate interests</strong> in keeping the app, sign-in service and website secure and working, fixing problems, and answering your emails.</li>
 </ul>
 <p>We don't use your information for marketing, and we don't make automated decisions about you.</p>
@@ -76,7 +78,7 @@
 
 <h2>Signing out and removing access</h2>
 <ul>
-  <li>Tap <strong>Sign out</strong> in the Floodlit iPhone app. This removes your sign-in from your iPhone and Apple Watch.</li>
+  <li>Tap <strong>Sign out</strong> in the Floodlit iPhone app. This removes your sign-in from your iPhone and Apple Watch, and deletes the game-week summary kept for the complications.</li>
   <li>You can also remove Floodlit's access at any time in your Sorare account settings. Its tokens then stop working.</li>
   <li>Deleting the app removes its cached data. Some versions of iOS may keep Keychain items after an app is deleted; signing out first removes them.</li>
 </ul>
@@ -99,7 +101,7 @@
     <a href="./">Home</a><a href="support.html">Help &amp; FAQ</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="mailto:info@bewarethechairultra.co.uk">Contact</a>
   </nav>
   <p>Floodlit is an independent app. It is not made, endorsed or sponsored by Sorare. Sorare is a trademark of Sorare SAS. Apple Watch and iPhone are trademarks of Apple Inc.</p>
-  <p>&copy; 2026 Floodlit</p>
+  <p>&copy; 2026 Richard Sibley</p>
 </div></footer>
 </body>
 </html>

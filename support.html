@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:title" content="Help & FAQ – Floodlit">
 <meta property="og:description" content="Answers to common questions about Floodlit, and how to get in touch.">
-<meta property="og:image" content="icon.png">
+<meta property="og:image" content="https://richsibs.github.io/floodlit/icon.png">
 <link rel="preload" href="fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -33,10 +33,11 @@
   <p>An iPhone with iOS 26 or later, an Apple Watch with watchOS 26 or later paired to it, and a Sorare account with Sorare Football lineups.</p>
 </div></details>
 <details><summary>How do I sign in?</summary><div>
-  <p>Open Floodlit on your iPhone and tap <strong>Log in with Sorare</strong>. iOS asks whether Floodlit may use its sign-in service. Tap Continue, sign in on Sorare's page and approve Floodlit. Then tap <strong>Send to watch</strong> and open Floodlit on your Apple Watch.</p>
+  <p>Open Floodlit on your iPhone and tap <strong>Log in with Sorare</strong>. Sorare's own page opens in a private sign-in sheet, so it always asks which Sorare account to use. Sign in and approve Floodlit.</p>
+  <p>Your iPhone then sends your sign-in to your Apple Watch by itself, so just open Floodlit on your watch. If it hasn't arrived, tap <strong>Send to watch</strong> on your iPhone.</p>
 </div></details>
 <details><summary>Can I try it without a Sorare account?</summary><div>
-  <p>Yes. On the watch, tap <strong>Try the demo</strong>, or on the iPhone tap <strong>Show the demo on my watch</strong>. You'll see sample lineups with made-up clubs and players. Tap the × on the watch to leave the demo.</p>
+  <p>Yes. On the watch, tap <strong>Try the demo</strong>, or on the iPhone tap <strong>Try the demo on my watch</strong> while Floodlit is open on your watch. You'll see sample lineups with made-up clubs and players. Tap the × on the watch to leave the demo.</p>
 </div></details>
 <details><summary>Do I have to sign in again?</summary><div>
   <p>Not usually. Floodlit renews your Sorare sign-in by itself. You'll only be asked again if you sign out, remove Floodlit's access on Sorare, or haven't used it for a long time.</p>
@@ -44,24 +45,45 @@
 
 <h2>Using Floodlit</h2>
 <details><summary>How do I move around the app?</summary><div>
-  <p>The first screen is this week at a glance. Turn the Digital Crown or swipe up for each lineup. On a lineup, swipe left for its total, position, projected finish and rewards. Tap a card to see it close up, then turn the Crown to go through the rest of the lineup and the bench.</p>
+  <p>The first screen is this week at a glance. Turn the Digital Crown or swipe up for each lineup. If you have 9 or more lineups, turning the Crown from the first screen opens a list instead, grouped by rarity with earning lineups first. Tap one to open it.</p>
+  <p>On a lineup, swipe left for its total, position, projected finish and rewards. Tap a card to see it close up, then turn the Crown to go through the rest of the lineup and the bench.</p>
 </div></details>
 <details><summary>How often do scores update?</summary><div>
   <p>Every couple of minutes while Floodlit is open, and each time you raise your wrist to it. You can also tap <strong>Refresh</strong> at the bottom of a lineup's summary. Scores come from Sorare, so they appear as quickly as Sorare publishes them.</p>
 </div></details>
+<details><summary>Does it work without my iPhone nearby?</summary><div>
+  <p>Yes, as long as your watch has Wi-Fi or mobile data. Your watch fetches your lineups from Sorare directly. You only need your iPhone to sign in and to buy Floodlit Pro.</p>
+</div></details>
 <details><summary>Are there watch face complications?</summary><div>
-  <p>Yes, with Floodlit Pro. You can add your game week earnings, your best reward so far, or a countdown to the lineup deadline to your watch face or Smart Stack. To add one, touch and hold your watch face, tap <strong>Edit</strong>, swipe to the complications and choose Floodlit. Open Floodlit once first so the complications have your lineups to show.</p>
+  <p>Yes, with Floodlit Pro. There are three:</p>
+  <ul>
+    <li><strong>Lineups earning</strong>: how many of your lineups are in a reward spot, by rarity. Before the game week starts, it counts down to the deadline.</li>
+    <li><strong>Prizes</strong>: the cash, ETH and essence your lineups are on track for.</li>
+    <li><strong>Lineup deadline</strong>: a countdown to the lineup deadline.</li>
+  </ul>
+  <p>To add one to your watch face, touch and hold the watch face, tap <strong>Edit</strong>, swipe to the complications, tap a spot and choose Floodlit.</p>
+  <p>To add one to the Smart Stack, open the Smart Stack (turn the Digital Crown or swipe up from the watch face), touch and hold, tap <strong>+</strong> and choose Floodlit.</p>
+  <p>Open Floodlit once first so the complications have your lineups to show.</p>
 </div></details>
 <details><summary>How often do complications update?</summary><div>
-  <p>The deadline countdown is always up to date, because it counts down on your watch without needing new data.</p>
-  <p>Earnings and rewards refresh in the background about every 15 minutes, so during matches they may be 15 to 30 minutes behind. watchOS decides exactly when each complication refreshes and limits how often it can happen, especially in Low Power Mode. Complications on the watch face you use most tend to refresh more often.</p>
+  <p>Countdowns to the deadline are always up to date, because they count down on your watch without needing new data.</p>
+  <p>Lineups earning and Prizes refresh in the background about every 15 minutes, so during matches they may be 15 to 30 minutes behind. watchOS decides exactly when each complication refreshes and limits how often it can happen, especially in Low Power Mode. Complications on the watch face you use most tend to refresh more often.</p>
   <p>Opening Floodlit always brings them up to date straight away.</p>
 </div></details>
-<details><summary>What do the colours and times under the cards mean?</summary><div>
-  <p>Scores use Sorare's colours, from low (red) to high (green). A white ring means the player's match is live. A time such as 15:00, or a day such as Sat, means the player is still to play.</p>
+<details><summary>What do the marks under the cards mean?</summary><div>
+  <p>Scores are shown in white. Around them:</p>
+  <ul>
+    <li>A short line under a score, in the lineup's rarity colour, means that player's match is live.</li>
+    <li>A grey time, such as 15:00 (or 3:00 PM on a 12-hour clock), or a day, such as Sat, means the player is still to play.</li>
+    <li><strong>DNP</strong> means the player didn't play.</li>
+    <li><strong>C</strong> is your captain, and <strong>&uarr;</strong> is a substitute who came on.</li>
+    <li>A pulsing dot next to the competition name means the lineup has games going on now.</li>
+  </ul>
+  <p>Until a card's picture loads, you'll see the player's initials.</p>
 </div></details>
 <details><summary>Which lineups does it show?</summary><div>
-  <p>Your Sorare Football lineups for the current game week, including 5 and 7 card lineups, captains and substitutes. Before the game week starts, the first screen counts down to the lineup deadline.</p>
+  <p>Your Sorare Football lineups for the current game week, including 5 and 7 card lineups, captains and substitutes. Your first lineup is free, and Floodlit Pro unlocks the rest. Sorare Arcade isn't supported.</p>
+  <p>Before the game week starts, the first screen counts down to the lineup deadline.</p>
 </div></details>
 <details><summary>Does it send notifications?</summary><div>
   <p>No. The Sorare app already sends notifications, and they appear on your watch. Floodlit is for checking scores at a glance.</p>
@@ -71,11 +93,14 @@
 <details><summary>My watch says "Sign in on your iPhone"</summary><div>
   <p>Open Floodlit on your iPhone. If you're signed in, tap <strong>Send to watch</strong>, keep the phone nearby, then tap <strong>Check again</strong> on the watch. If not, sign in first.</p>
 </div></details>
+<details><summary>My watch says "Sign in again"</summary><div>
+  <p>Sorare has ended Floodlit's sign-in, so you need to log in again. Open Floodlit on your iPhone. If it asks you to log in, tap <strong>Log in with Sorare</strong>. If it still shows you as signed in, tap <strong>Sign out</strong>, then <strong>Log in with Sorare</strong>. Your watch picks up the new sign-in by itself.</p>
+</div></details>
 <details><summary>I see "Too many requests" when signing in</summary><div>
   <p>Sorare limits how often apps can sign in. Wait a minute and try again.</p>
 </div></details>
 <details><summary>Card pictures don't appear</summary><div>
-  <p>Pictures download over your watch's connection. Make sure your watch is near your iPhone or on Wi-Fi, then refresh. Until a picture arrives, Floodlit shows the player's initials.</p>
+  <p>Pictures download over your watch's connection. Make sure your watch is near your iPhone or on Wi-Fi or mobile data, then refresh. Until a picture arrives, Floodlit shows the player's initials.</p>
 </div></details>
 <details><summary>"No lineups this game week"</summary><div>
   <p>Floodlit shows lineups you've set for the current Sorare Football game week. If you've just set one, give it a minute and tap Try again.</p>
@@ -91,13 +116,20 @@
 <details><summary>How do I sign out or remove access?</summary><div>
   <p>Tap <strong>Sign out</strong> in the iPhone app; it signs your watch out too. You can also remove Floodlit's access in your Sorare account settings at any time.</p>
 </div></details>
+<details><summary>How do I switch Sorare accounts?</summary><div>
+  <p>Tap <strong>Sign out</strong> in the iPhone app, then tap <strong>Log in with Sorare</strong> and sign in with the other account. Floodlit always asks which Sorare account to use, so you won't be signed straight back in to the old one.</p>
+</div></details>
 <details><summary>Is Floodlit free?</summary><div>
-  <p>Floodlit is free to download, and your first lineup is free to follow. A one-off £2.99 purchase in the iPhone app (<strong>Unlock every lineup</strong>) unlocks all your lineups on your watch. There's no subscription.</p>
+  <p>Floodlit is free to download, and your first lineup is free to follow. Floodlit Pro, a one-off purchase in the iPhone app (<strong>Unlock every lineup</strong>), unlocks all your lineups on your watch and the watch face complications. It's £2.99 in the UK, or the local price in your own currency elsewhere. There's no subscription.</p>
+  <p>Floodlit Pro isn't shared through Family Sharing.</p>
+</div></details>
+<details><summary>Which lineup is free?</summary><div>
+  <p>The first lineup in your Sorare list when Floodlit first loads that game week. It then stays the same until the next game week. Floodlit Pro unlocks all of them.</p>
 </div></details>
 <details><summary>I bought Floodlit before it was free. Do I need to pay again?</summary><div>
-  <p>No. If you bought Floodlit when it was a paid app, every lineup is unlocked automatically. If anything still shows a lock, open Floodlit on your iPhone and tap <strong>Restore purchase</strong>.</p>
+  <p>No. If you bought Floodlit when it was a paid app, you get Floodlit Pro automatically, with every lineup and the complications. If anything still shows a lock, open Floodlit on your iPhone and tap <strong>Restore purchase</strong>.</p>
 </div></details>
-<details><summary>I've bought the unlock but my lineups are still locked</summary><div>
+<details><summary>I've bought Floodlit Pro but my lineups are still locked</summary><div>
   <p>Open Floodlit on your iPhone with your watch nearby, so the iPhone can tell your watch. If that doesn't work, tap <strong>Restore purchase</strong>, signed in with the same Apple Account you bought it with.</p>
 </div></details>
 <details><summary>How do I get a refund?</summary><div>
@@ -116,7 +148,7 @@
     <a href="./">Home</a><a href="support.html">Help &amp; FAQ</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="mailto:info@bewarethechairultra.co.uk">Contact</a>
   </nav>
   <p>Floodlit is an independent app. It is not made, endorsed or sponsored by Sorare. Sorare is a trademark of Sorare SAS. Apple Watch and iPhone are trademarks of Apple Inc.</p>
-  <p>&copy; 2026 Floodlit</p>
+  <p>&copy; 2026 Richard Sibley</p>
 </div></footer>
 </body>
 </html>

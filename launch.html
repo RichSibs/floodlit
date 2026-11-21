@@ -4,135 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Floodlit – Your Sorare lineups, on your wrist</title>
-<meta name="description" content="Live scores, rank, rewards and deadlines for your Sorare Football lineups, on your Apple Watch. Free to try, £2.99 once to unlock every lineup. No subscription.">
+<meta name="description" content="Live scores, rank, rewards and deadlines for your Sorare Football lineups, on your Apple Watch. Free to try, £2.99 once to unlock every lineup and the watch face complications. No subscription.">
 <meta name="theme-color" content="#050806">
+<link rel="canonical" href="https://richsibs.github.io/floodlit/">
+<meta http-equiv="refresh" content="0; url=./">
+<script>location.replace("./" + location.hash);</script>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Floodlit – Your Sorare lineups, on your wrist">
-<meta property="og:description" content="Live scores, rank, rewards and deadlines on your Apple Watch. Free to try, £2.99 once for every lineup. No subscription.">
+<meta property="og:description" content="Live scores, rank, rewards and deadlines on your Apple Watch. Free to try, £2.99 once for every lineup and the watch face complications. No subscription.">
 <meta property="og:image" content="https://richsibs.github.io/floodlit/og-image.png">
-<meta property="og:url" content="https://richsibs.github.io/floodlit/launch.html">
+<meta property="og:url" content="https://richsibs.github.io/floodlit/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FloodlitApp">
 <meta name="twitter:image" content="https://richsibs.github.io/floodlit/og-image.png">
-<link rel="preload" href="fonts/barlow-condensed-latin-900-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="marketing.css">
 </head>
 <body>
-<header class="top"><div class="wrap">
-  <a class="brand" href="./"><img src="img/icon-256.png" alt=""><span>Floodlit</span></a>
-  <nav class="nav" aria-label="Main">
-    <a href="./">Home</a>
-    <a href="support.html">Help</a>
-    <a href="press.html">Press</a>
-  </nav>
-</div></header>
-<main>
-
-<section class="hero" aria-labelledby="hero-title">
-  <div class="wrap">
-    <div>
-      <p class="kicker">For Sorare Football managers</p>
-      <h1 class="punch" id="hero-title">Your lineups,<br><em>on your wrist.</em></h1>
-      <div class="rarity" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <p class="lede">Live scores, your rank, what you're earning and how long until lock. Every lineup, every rarity, on your Apple Watch. A glance at your wrist, phone stays in your pocket.</p>
-      <div class="ctas">
-        <!-- Apple's official badge (unmodified, from Apple's marketing tools) goes in img/app-store-badge.svg.
-             Set APP_URL below to the App Store link once Floodlit is on sale. If the file is missing, the text button shows instead. -->
-        <a class="badge" href="https://apps.apple.com/app/id6834572083" aria-label="Download Floodlit on the App Store">
-          <img src="img/app-store-badge.svg" alt="Download on the App Store" height="54"
-               onerror="this.parentNode.style.display='none';document.getElementById('soon').style.display='inline-flex'">
-        </a>
-        <span class="btn" id="soon" style="display:none" aria-disabled="true">Coming soon to the App Store</span>
-        <a class="btn ghost" href="#how">How it works</a>
-      </div>
-      <p class="fine">Free to try · £2.99 once to unlock every lineup · iPhone + Apple Watch · watchOS 26</p>
-    </div>
-    <div class="duo">
-      <div class="wrist sm"><div class="case"><div class="glass"><img src="img/watch-2-422x514.png" alt="A 7-card lineup on the watch with each player's live score"></div></div></div>
-      <div class="wrist"><div class="case"><div class="glass"><img src="img/watch-4-422x514.png" alt="Lineup summary: 289.4 points, 1,243rd place, 15.6 points to the next reward"></div></div></div>
-    </div>
-  </div>
-</section>
-
-<section aria-labelledby="moments">
-  <div class="wrap">
-    <h2 id="moments">Made for match day</h2>
-    <p class="sub">Game weeks don't wait for you to be sat at a screen. Floodlit is for every moment in between.</p>
-    <div class="moments">
-      <div class="moment"><b>In the stands</b><p>Your striker scores in front of you. See what it did to your lineup without missing the restart.</p></div>
-      <div class="moment"><b>At the school gate</b><p>Check the countdown before lineups lock, with your hands full and your phone in the bag.</p></div>
-      <div class="moment"><b>Sunday dinner</b><p>A subtle glance at the late kick-off. Nobody needs to know you're 15 points off the next reward.</p></div>
-      <div class="moment"><b>Out on a run</b><p>Saturday 3pm and you're out on the trails. Scores come with you.</p></div>
-    </div>
-  </div>
-</section>
-
-<section aria-labelledby="tour" style="padding-top:0">
-  <div class="wrap">
-    <h2 id="tour">A quick tour</h2>
-    <p class="sub">Sample lineups shown. Signed in, you see your own cards with their real Sorare images.</p>
-    <div class="reel">
-      <figure><div class="wrist sm"><div class="case"><div class="glass"><img src="img/watch-1-422x514.png" alt="Start screen with this week's rewards and countdowns" loading="lazy"></div></div></div>
-        <figcaption><b>This week</b><span>Rewards you're on track for across every lineup, plus kick-off and lock countdowns.</span></figcaption></figure>
-      <figure><div class="wrist sm"><div class="case"><div class="glass"><img src="img/watch-2-422x514.png" alt="Lineup on the pitch with live scores" loading="lazy"></div></div></div>
-        <figcaption><b>Every card</b><span>5 and 7 card lineups with captain, subs and live scores.</span></figcaption></figure>
-      <figure><div class="wrist sm"><div class="case"><div class="glass"><img src="img/watch-3-422x514.png" alt="Single card detail with match score" loading="lazy"></div></div></div>
-        <figcaption><b>Card by card</b><span>Tap in for the score and the match. Crown to the next.</span></figcaption></figure>
-      <figure><div class="wrist sm"><div class="case"><div class="glass"><img src="img/watch-4-422x514.png" alt="Total, rank and next reward" loading="lazy"></div></div></div>
-        <figcaption><b>The full picture</b><span>Total, rank, projected finish, points to the next reward.</span></figcaption></figure>
-      <figure><div class="wrist sm"><div class="case"><div class="glass"><img src="img/watch-5-422x514.png" alt="A Rare lineup in red" loading="lazy"></div></div></div>
-        <figcaption><b>Your colours</b><span>Limited, Rare, Super Rare and Unique, each in its own colour.</span></figcaption></figure>
-      <figure><div class="wrist sm"><div class="case"><div class="glass"><img src="img/watch-6-422x514.png" alt="List of many lineups grouped by rarity" loading="lazy"></div></div></div>
-        <figcaption><b>Fifty lineups</b><span>Lots of teams? One tidy list, earning first.</span></figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section aria-labelledby="price" style="padding-top:0">
-  <div class="wrap">
-    <div class="price">
-      <p class="kicker">First lineup free. Then one price. That's it.</p>
-      <h2 class="punch" id="price">£2.99 <em>once.</em></h2>
-      <div class="rarity" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <p>Download Floodlit free and follow your first lineup. Unlock every lineup with a one-off £2.99 purchase. No subscription, no ads, no tracking, no analytics.</p>
-    </div>
-  </div>
-</section>
-
-<section aria-labelledby="how" id="how" style="padding-top:0">
-  <div class="wrap">
-    <h2>Up and running in a minute</h2>
-    <p class="sub">The iPhone app has one job: signing you in. Everything else happens on your watch.</p>
-    <ol class="steps">
-      <li><b>Get Floodlit</b>It installs on your iPhone and Apple Watch together.</li>
-      <li><b>Log in with Sorare</b>On Sorare's own page. Floodlit never sees your password.</li>
-      <li><b>Raise your wrist</b>Your lineups are there. Turn the crown to move between them.</li>
-    </ol>
-    <p class="fine">Just looking? Open Floodlit on your watch and tap "Try the demo". No account needed.</p>
-  </div>
-</section>
-
-<section aria-labelledby="faq" style="padding-top:0">
-  <div class="wrap">
-    <h2 id="faq" style="font-size:34px">Quick answers</h2>
-    <details><summary>Is Floodlit made by Sorare?</summary><div><p>No. Floodlit is an independent app made by a Sorare manager. It works with your Sorare account but isn't made, endorsed or sponsored by Sorare.</p></div></details>
-    <details><summary>Does it work with Sorare NBA or MLB?</summary><div><p>Not yet. Floodlit is for Sorare Football lineups.</p></div></details>
-    <details><summary>Can I set lineups from my watch?</summary><div><p>No, Floodlit is for following your game week. Build and submit lineups in Sorare as usual.</p></div></details>
-    <details><summary>Where is it available?</summary><div><p>On the App Store in the UK and many other countries. It isn't available in EU countries at the moment.</p></div></details>
-    <p style="margin-top:18px"><a href="support.html">More help &amp; FAQ</a></p>
-  </div>
-</section>
-
-</main>
-<footer><div class="wrap">
-  <nav aria-label="Footer">
-    <a href="./">Home</a><a href="support.html">Help &amp; FAQ</a><a href="press.html">Press</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="https://x.com/FloodlitApp">X</a>
-  </nav>
-  <p>Floodlit is an independent app. It is not made, endorsed or sponsored by Sorare. Sorare is a trademark of Sorare SAS. Apple Watch and iPhone are trademarks of Apple Inc. Screens show sample data.</p>
-  <p>&copy; 2026 Floodlit</p>
-</div></footer>
+<main class="doc"><div class="wrap">
+  <p>This page has moved to the <a href="./">Floodlit home page</a>.</p>
+</div></main>
 </body>
 </html>
