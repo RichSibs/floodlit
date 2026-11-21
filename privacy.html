@@ -36,7 +36,6 @@
 <h2>What Floodlit handles, and where it goes</h2>
 <ul>
   <li><strong>Your Sorare sign-in.</strong> When you choose <em>Log in with Sorare</em>, you sign in on Sorare's own web page and approve Floodlit there. Floodlit never sees your Sorare password. Sorare then gives Floodlit access tokens that let it read your lineups. These tokens are stored only in the secure Keychain on your iPhone and Apple Watch, and are sent only to Sorare and to Floodlit's sign-in service (below).</li>
-  <li><strong>Email and password sign-in (optional).</strong> If you use this instead, your password is scrambled (hashed) on your iPhone before it is sent to Sorare, and it is never saved. Your email address is sent to Sorare to sign you in and is not stored by Floodlit.</li>
   <li><strong>Your lineups, scores and rewards.</strong> Your Apple Watch fetches these directly from Sorare's servers and shows them. Card pictures are downloaded from Sorare's image servers and kept in a cache on the watch for up to 14 days so they load faster. None of this is sent to us.</li>
   <li><strong>Between your iPhone and Apple Watch.</strong> Your iPhone passes your sign-in to your watch using Apple's encrypted Watch Connectivity.</li>
   <li><strong>Small settings on your watch.</strong> The watch remembers when it last received a sign-in from your phone, and a scrambled fingerprint (not the token itself) of any sign-in Sorare has turned down, so it doesn't retry it. These never leave the watch, and the fingerprint is deleted when you sign out.</li>
